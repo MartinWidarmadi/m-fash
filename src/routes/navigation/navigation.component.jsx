@@ -16,10 +16,6 @@ const Navigation = () => {
   const { currentUser } = useContext(UserContext);
   const { isCartOpen, setIsCartOpen } = useContext(ShoppingCartContext);
 
-  const popShoppingCart = () => {
-    setIsCartOpen(!isCartOpen);
-  };
-
   return (
     <Fragment>
       <nav className="navigation">
